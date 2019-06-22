@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author ccarreno
+ * @author tvaras
  * 21-06-2019
  */
 @WebFilter(filterName = "AuthFilter", urlPatterns = { "*.xhtml", "*.jsf" })
