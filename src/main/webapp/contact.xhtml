@@ -79,21 +79,22 @@
 				<div class="col-lg-8">
 					<div class="contact-form-warp">
 						<h4 class="comment-title">Deja tu pregunta </h4>
-						<form class="comment-form">
+						<h:form class="comment-form">
 							<div class="row">
 								<div class="col-md-6">
-									<input type="text" placeholder="Nombre"/>
+									<h:inputText type="text" value="#{contactBean.name}" placeholder="Nombre"></h:inputText>
 								</div>
 								<div class="col-md-6">
-									<input type="email" placeholder="Email"/>
+									<h:inputText type="email" value="#{contactBean.email}" placeholder="Email"></h:inputText>
 								</div>
 								<div class="col-lg-12">
-									<input type="text" placeholder="Motivo"/>
-									<textarea placeholder="Mensaje"></textarea>
-									<button class="site-btn btn-sm">Enviar </button>
+									<h:inputText type="text" value="#{contactBean.reason}" placeholder="Motivo"></h:inputText>
+									<h:inputTextarea value="#{contactBean.message}" placeholder="Mensaje"></h:inputTextarea>
+									<h:commandButton action="submit" value="Enviar" class="site-btn btn-sm"></h:commandButton>
+									<!-- <button class="site-btn btn-sm">Enviar </button> -->
 								</div>
 							</div>
-						</form>
+						</h:form>
 					</div>
 				</div>
 			</div>
