@@ -1,5 +1,7 @@
 package cl.duoc.electivo.gamertrade.beans;
 
+import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
@@ -7,10 +9,11 @@ import javax.faces.bean.RequestScoped;
  * @author tvaras
  * 21-06-2019
  */
-@ManagedBean // Use @javax.faces.bean.ManagedBean on outdated environments.
+@ManagedBean(name = "contact", eager = true)
 @RequestScoped 
-public class ContactBean {
+public class ContactBean implements Serializable {
 
+	private static final long serialVersionUID = -6677824063731269091L;
 	private String name;
 	private String email;
 	private String reason;
@@ -52,4 +55,5 @@ public class ContactBean {
         String postValues = "Submitted values: " + name + ", " + email + ", " + reason + ", " + message;
         System.out.println(postValues);
     }
+    
 }

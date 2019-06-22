@@ -82,15 +82,15 @@
 						<h:form class="comment-form">
 							<div class="row">
 								<div class="col-md-6">
-									<h:inputText type="text" value="#{contactBean.name}" placeholder="Nombre"></h:inputText>
+									<h:inputText type="text" value="#{contact.name}" placeholder="Nombre"></h:inputText>
 								</div>
 								<div class="col-md-6">
-									<h:inputText type="email" value="#{contactBean.email}" placeholder="Email"></h:inputText>
+									<h:inputText type="email" value="#{contact.email}" placeholder="Email"></h:inputText>
 								</div>
 								<div class="col-lg-12">
-									<h:inputText type="text" value="#{contactBean.reason}" placeholder="Motivo"></h:inputText>
-									<h:inputTextarea value="#{contactBean.message}" placeholder="Mensaje"></h:inputTextarea>
-									<h:commandButton action="submit" value="Enviar" class="site-btn btn-sm"></h:commandButton>
+									<h:inputText type="text" value="#{contact.reason}" placeholder="Motivo"></h:inputText>
+									<h:inputTextarea value="#{contact.message}" placeholder="Mensaje"></h:inputTextarea>
+									<h:commandButton action="#{contact.submit()}" value="Enviar" class="site-btn btn-sm"></h:commandButton>
 									<!-- <button class="site-btn btn-sm">Enviar </button> -->
 								</div>
 							</div>
